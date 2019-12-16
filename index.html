@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script
+      src="https://kit.fontawesome.com/bf6a326da4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Chats | Kakao Clone</title>
+  </head>
+  <body>
+    <!-- 최상단 디바이스 상태바 -->
+    <div class="status-bar"></div>
+
+    <div class="tatus-bar__column">
+      <!-- 시계정보  -->
+      <span class="status-bar__clock">12:10</span>
+    </div>
+    <!-- 인터넷,배터리상태 표시 창 -->
+    <div class="tatus-bar__column">
+      <i class="far fa-clock"></i>
+      <i class="fas fa-volume-up"></i>
+      <i class="fas fa-wifi"></i>
+      <span class="status-bar__battery-level">40%</span>
+      <i class="fas fa-battery-quarter"></i>
+    </div>
+    <!-- 해더 -->
+    <header class="header">
+      <div class="header__header-column">
+        <h1 class="header__title">Chats</h1>
+      </div>
+      <div class="header__header-column">
+        <!-- 해더에 아이콘  -->
+        <span class="header__icon">
+          <i class="fas fa-search"></i>
+        </span>
+        <span class="header__icon">
+          <i class="far fa-comment"></i>
+        </span>
+        <span class="header__icon">
+          <i class="fas fa-cog"></i>
+        </span>
+      </div>
+    </header>
+    <main class="chats">
+      <ul class="chats__list">
+        <a href="chat.html">
+          <li class="chats__chat">
+            <div class="char__column">
+              <img class="chat_avatar" src="images/avatar.jpg" alt="" />
+              <div class="chat_content">
+                <span class="chat__username">Lohman </span>
+                <span class="chat_preview">Going home</span>
+              </div>
+            </div>
+            <div class="char__column">
+              <span class="char__timestamp">Yesterday</span>
+            </div>
+          </li>
+        </a>
+      </ul>
+    </main>
+    <!-- 하단 네이게이션 바 -->
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav_list-item">
+          <a href="friends.html" class="nav__list-link">
+            <i class="far fa-user"></i
+          ></a>
+        </li>
+        <li class="nav_list-item">
+          <a href="index.html" class="nav__list-link">
+            <i class="fas fa-comment"></i>
+          </a>
+        </li>
+        <li class="nav_list-item">
+          <a href="find.html" class="nav__list-link">
+            <i class="fas fa-search"></i
+          ></a>
+        </li>
+        <li class="nav_list-item">
+          <a href="more.html" class="nav__list-link">
+            <i class="fas fa-ellipsis-h"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+  </body>
+</html>
