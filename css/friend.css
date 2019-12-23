@@ -1,0 +1,18 @@
+.friend {
+  /* 가로정렬 및 자리설정 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* 프로필사진 모서리 돌리기*/
+.friend .friend__avatar {
+  width: 50px;
+  /* 모서리 돌리기 */
+  border-radius: 35%;
+}
+
+/* 클래스를 쓸때 클래스 사이를 띄지 않으면 두클래스를 모두 가지고 있는곳에 적용한다는 의미 */
+.friend__avatar.g-avatar {
+  /* width: 70px; */
+}

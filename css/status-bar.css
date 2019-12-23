@@ -1,0 +1,20 @@
+.status-bar {
+  /* 가로정렬 */
+  display: flex;
+  /* 화면에서 태그들을 대칭하게 정렬해준다. */
+  justify-content: space-between;
+  /* 상태바와 해더  사이의 간격 */
+  margin-bottom: 30px;
+  /* 투명도 */
+  opacity: 0.7;
+}
+
+/* 아이콘 크기조절 */
+.status-bar i {
+  font-size: 14px;
+}
+/* 배터리 퍼센트 와 와이파이 마진 조절 */
+
+.status-bar__column .status-bar__battery-level {
+  margin-left: 5px;
+}

@@ -1,0 +1,47 @@
+.nav {
+  /* 브라우저 에서 스크롤을 움직여도 항상 그자리에 있도록 fixed
+  fixed 사용할때는 항상 width 를 사용해야한다. 그래야 보인다.
+  fixed 는 엘리먼트를 기존다른 것들에서 부터 떼어내서 다른 레이어에 올려논다. */
+  position: fixed;
+  width: 100%;
+  padding: 20px 50px;
+  left: 0px;
+  bottom: 0px;
+  background-color: #fcfcfc;
+  border-top: 1px solid #f7f7f7;
+  box-sizing: border-box;
+}
+
+.nav .nav__list {
+  /* 가로정렬 flex : 굽힘, */
+  display: flex;
+  /* 좌우로 정렬 */
+  justify-content: space-between;
+}
+.nav i {
+  font-size: 20px;
+}
+
+.nav .nav__list-link {
+  /* 해당 클래스 자식들을 묶어준다. */
+  position: relative;
+}
+
+.nav .nav__badge {
+  position: absolute;
+  /* 배지 위치 */
+  top: -10px;
+  right: -10px;
+  color: white;
+  background-color: #dc5d46;
+  font-size: 10px;
+  /* 배지 크기 */
+  width: 18px;
+  height: 18px;
+  /* 박스안에서 텍스트 가운데 정렬 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 박스를 원형으로 만들기 */
+  border-radius: 50%;
+}
