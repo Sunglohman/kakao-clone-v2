@@ -8,11 +8,73 @@
 /* 프로필사진 모서리 돌리기*/
 .friend .friend__avatar {
   width: 50px;
+  height: 50px;
   /* 모서리 돌리기 */
   border-radius: 35%;
 }
 
 /* 클래스를 쓸때 클래스 사이를 띄지 않으면 두클래스를 모두 가지고 있는곳에 적용한다는 의미 */
 .friend__avatar.g-avatar {
-  /* width: 70px; */
+  width: 70px;
+  height: 70px;
+}
+
+.friend__avatar.m-avatar {
+  width: 60px;
+  height: 60px;
+}
+
+.friend .friend__column {
+  /* 가로정렬 */
+  display: flex;
+  /* 해당 클래스 아이템들 가운데 정렬 */
+  align-items: center;
+}
+.friend .friend__avatar {
+  margin-right: 15px;
+}
+.friend__content .friend__name {
+  /* 이름과 상태가 인라인(가로정렬) 상태가 기본이 였는데 이름이 위로가도록 block 으로 변경 */
+  display: block;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.friend__content .friend__status,
+.friend__content .friend__bottom-text,
+.friend .chat__timestamp {
+  opacity: 0.7;
+}
+
+.friend__content .friend__bottom-text {
+  font-size: 14px;
+}
+
+.friend__content .friend__status,
+.friend .chat__timestamp {
+  font-size: 12px;
+}
+
+.friends .friend__now-listening {
+  border: 1.5px solid #5aad77;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+}
+
+.friend__now-listening span {
+  opacity: 0.6;
+}
+
+.friend__now-listening i {
+  font-size: 12px;
+}
+
+.friend__add-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  padding: 10px 15px;
+  border-radius: 5px;
 }
