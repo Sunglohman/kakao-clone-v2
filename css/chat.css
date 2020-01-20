@@ -125,6 +125,7 @@
 
 .incoming-message img {
   width: 30px;
+  height: 30px;
   border-radius: 15px;
   margin-right: 15px;
   box-shadow: 0 30px 60px -60px rgba(50, 50, 93, 0.25),
